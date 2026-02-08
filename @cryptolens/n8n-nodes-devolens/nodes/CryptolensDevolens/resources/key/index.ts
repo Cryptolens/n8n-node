@@ -3,6 +3,7 @@ import { keyAddFeatureDescription } from './addFeature';
 import { keyBlockDescription } from './block';
 import { keyCreateDescription } from './create';
 import { keyExtendLicenseDescription } from './extend';
+import { keyRemoveFeatureDescription } from './removeFeature';
 import { keyUnblockDescription } from './unblock';
 
 const showOnlyForKeys = {
@@ -28,6 +29,18 @@ export const keyDescription: INodeProperties[] = [
 					request: {
 						method: 'GET',
 						url: '/key/AddFeature',
+					},
+				},
+			},
+			{
+				name: 'Remove Feature',
+				value: 'removeFeature',
+				action: 'Remove a feature from a license',
+				description: 'Set a feature flag to false on a key',
+				routing: {
+					request: {
+						method: 'GET',
+						url: '/key/RemoveFeature',
 					},
 				},
 			},
@@ -83,6 +96,7 @@ export const keyDescription: INodeProperties[] = [
 		default: 'create',
 	},
 	...keyAddFeatureDescription,
+	...keyRemoveFeatureDescription,
 	...keyBlockDescription,
 	...keyUnblockDescription,
 	...keyCreateDescription,
