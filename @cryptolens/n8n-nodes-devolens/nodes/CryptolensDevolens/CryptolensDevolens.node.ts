@@ -1,6 +1,7 @@
 import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from 'n8n-workflow';
 import { userDescription } from './resources/user';
 import { companyDescription } from './resources/company';
+import { keyDescription } from './resources/key';
 
 export class CryptolensDevolens implements INodeType {
 	description: INodeTypeDescription = {
@@ -40,11 +41,16 @@ export class CryptolensDevolens implements INodeType {
 						name: 'Company',
 						value: 'company',
 					},
+					{
+						name: 'Key',
+						value: 'key',
+					},
 				],
 				default: 'user',
 			},
 			...userDescription,
 			...companyDescription,
+			...keyDescription,
 		],
 	};
 }
