@@ -1,4 +1,5 @@
 import type { INodeProperties } from 'n8n-workflow';
+import { keyAddFeatureDescription } from './addFeature';
 import { keyBlockDescription } from './block';
 import { keyCreateDescription } from './create';
 import { keyExtendLicenseDescription } from './extend';
@@ -18,6 +19,18 @@ export const keyDescription: INodeProperties[] = [
 			show: showOnlyForKeys,
 		},
 		options: [
+			{
+				name: 'Add Feature',
+				value: 'addFeature',
+				action: 'Add a feature to a license',
+				description: 'Set a feature flag to true on a key',
+				routing: {
+					request: {
+						method: 'GET',
+						url: '/key/AddFeature',
+					},
+				},
+			},
 			{
 				name: 'Block',
 				value: 'block',
@@ -69,6 +82,7 @@ export const keyDescription: INodeProperties[] = [
 		],
 		default: 'create',
 	},
+	...keyAddFeatureDescription,
 	...keyBlockDescription,
 	...keyUnblockDescription,
 	...keyCreateDescription,
