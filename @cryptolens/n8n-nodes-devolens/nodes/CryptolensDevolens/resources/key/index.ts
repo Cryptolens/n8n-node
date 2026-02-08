@@ -1,5 +1,6 @@
 import type { INodeProperties } from 'n8n-workflow';
 import { keyCreateDescription } from './create';
+import { keyExtendLicenseDescription } from './extend';
 
 const showOnlyForKeys = {
 	resource: ['key'],
@@ -27,8 +28,21 @@ export const keyDescription: INodeProperties[] = [
 					},
 				},
 			},
+			{
+				name: 'Extend License',
+				value: 'extendLicense',
+				action: 'Extend a license',
+				description: 'Extend an existing Cryptolens key',
+				routing: {
+					request: {
+						method: 'GET',
+						url: '/key/ExtendLicense',
+					},
+				},
+			},
 		],
 		default: 'create',
 	},
 	...keyCreateDescription,
+	...keyExtendLicenseDescription,
 ];
