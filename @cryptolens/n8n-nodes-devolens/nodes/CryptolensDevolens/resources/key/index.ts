@@ -1,6 +1,8 @@
 import type { INodeProperties } from 'n8n-workflow';
+import { keyBlockDescription } from './block';
 import { keyCreateDescription } from './create';
 import { keyExtendLicenseDescription } from './extend';
+import { keyUnblockDescription } from './unblock';
 
 const showOnlyForKeys = {
 	resource: ['key'],
@@ -16,6 +18,30 @@ export const keyDescription: INodeProperties[] = [
 			show: showOnlyForKeys,
 		},
 		options: [
+			{
+				name: 'Block',
+				value: 'block',
+				action: 'Block a license',
+				description: 'Block an existing Cryptolens key',
+				routing: {
+					request: {
+						method: 'GET',
+						url: '/key/BlockKey',
+					},
+				},
+			},
+			{
+				name: 'Unblock',
+				value: 'unblock',
+				action: 'Unblock a license',
+				description: 'Unblock an existing Cryptolens key',
+				routing: {
+					request: {
+						method: 'GET',
+						url: '/key/UnblockKey',
+					},
+				},
+			},
 			{
 				name: 'Create',
 				value: 'create',
@@ -43,6 +69,8 @@ export const keyDescription: INodeProperties[] = [
 		],
 		default: 'create',
 	},
+	...keyBlockDescription,
+	...keyUnblockDescription,
 	...keyCreateDescription,
 	...keyExtendLicenseDescription,
 ];
