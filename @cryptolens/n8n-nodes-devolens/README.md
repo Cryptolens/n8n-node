@@ -1,4 +1,4 @@
-# @cryptolens/n8n-nodes-devolens
+﻿# @cryptolens/n8n-nodes-devolens
 
 This is an n8n community node for Cryptolens. It lets you use Cryptolens Web API v3 in your n8n workflows.
 
@@ -40,7 +40,8 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 Create a Cryptolens Access Token in your Cryptolens account and add it in n8n as the credential type `Cryptolens Devolens API`.
 
 Credential field:
-- `Access Token`
+- `Access Token` 
+- Source file: [`credentials/CryptolensDevolensApi.credentials.ts`](https://github.com/Cryptolens/n8n-node/blob/main/%40cryptolens/n8n-nodes-devolens/credentials/CryptolensDevolensApi.credentials.ts)
 
 This node sends the token as:
 - `token` header
@@ -77,3 +78,4 @@ Notes:
 
 ### 0.1.0
 - Initial public version.
+
