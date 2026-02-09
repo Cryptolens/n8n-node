@@ -8,7 +8,8 @@
   "author": { "name": "Artem Los", "email": "artem@cryptolens.io" },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cryptolens/n8n-node.git"
+    "url": "git+https://github.com/Cryptolens/n8n-node.git",
+    "directory": "@cryptolens/n8n-nodes-devolens"
   },
   "bugs": {
     "url": "https://github.com/Cryptolens/n8n-node/issues"
