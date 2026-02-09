@@ -6,12 +6,12 @@
 	"resources": {
 		"credentialDocumentation": [
 			{
-				"url": "https://github.com/org/repo?tab=readme-ov-file#credentials"
+				"url": "https://github.com/Cryptolens/n8n-node/blob/main/%40cryptolens/n8n-nodes-devolens/README.md#credentials"
 			}
 		],
 		"primaryDocumentation": [
 			{
-				"url": "https://github.com/org/repo?tab=readme-ov-file"
+				"url": "https://github.com/Cryptolens/n8n-node/blob/main/%40cryptolens/n8n-nodes-devolens/README.md"
 			}
 		]
 	}

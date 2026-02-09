@@ -11,7 +11,8 @@ export class CryptolensDevolensApi implements ICredentialType {
 	displayName = 'Cryptolens Devolens API';
 
 	// Link to your community node's README
-	documentationUrl = 'https://github.com/org/@cryptolens/-devolens?tab=readme-ov-file#credentials';
+	documentationUrl =
+		'https://github.com/Cryptolens/n8n-node/blob/main/%40cryptolens/n8n-nodes-devolens/README.md#credentials';
 
 	properties: INodeProperties[] = [
 		{

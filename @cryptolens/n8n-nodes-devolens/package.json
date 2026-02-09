@@ -1,14 +1,17 @@
 {
   "name": "@cryptolens/n8n-nodes-devolens",
   "version": "0.1.0",
-  "description": "",
+  "description": "n8n community node for Cryptolens Web API v3",
   "license": "MIT",
-  "homepage": "",
-  "keywords": ["n8n-community-node-package"],
-  "author": { "name": "", "email": "" },
+  "homepage": "https://github.com/Cryptolens/n8n-node/tree/main/%40cryptolens/n8n-nodes-devolens",
+  "keywords": ["n8n-community-node-package", "n8n", "cryptolens", "licensing"],
+  "author": { "name": "Artem Los", "email": "artem@cryptolens.io" },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "git+https://github.com/Cryptolens/n8n-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Cryptolens/n8n-node/issues"
   },
   "scripts": {
     "build": "n8n-node build",
