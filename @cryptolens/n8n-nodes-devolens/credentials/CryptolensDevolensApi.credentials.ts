@@ -1,5 +1,6 @@
 import type {
 	IAuthenticateGeneric,
+	Icon,
 	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
@@ -9,6 +10,11 @@ export class CryptolensDevolensApi implements ICredentialType {
 	name = 'cryptolensDevolensApi';
 
 	displayName = 'Cryptolens Devolens API';
+
+	icon: Icon = {
+		light: 'file:../nodes/CryptolensDevolens/cryptolensDevolens.svg',
+		dark: 'file:../nodes/CryptolensDevolens/cryptolensDevolens.dark.svg',
+	};
 
 	// Link to your community node's README
 	documentationUrl =

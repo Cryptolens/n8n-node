@@ -33,18 +33,6 @@ export const keyDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Remove Feature',
-				value: 'removeFeature',
-				action: 'Remove a feature from a license',
-				description: 'Set a feature flag to false on a key',
-				routing: {
-					request: {
-						method: 'GET',
-						url: '/key/RemoveFeature',
-					},
-				},
-			},
-			{
 				name: 'Block',
 				value: 'block',
 				action: 'Block a license',
@@ -53,18 +41,6 @@ export const keyDescription: INodeProperties[] = [
 					request: {
 						method: 'GET',
 						url: '/key/BlockKey',
-					},
-				},
-			},
-			{
-				name: 'Unblock',
-				value: 'unblock',
-				action: 'Unblock a license',
-				description: 'Unblock an existing Cryptolens key',
-				routing: {
-					request: {
-						method: 'GET',
-						url: '/key/UnblockKey',
 					},
 				},
 			},
@@ -89,6 +65,30 @@ export const keyDescription: INodeProperties[] = [
 					request: {
 						method: 'GET',
 						url: '/key/ExtendLicense',
+					},
+				},
+			},
+			{
+				name: 'Remove Feature',
+				value: 'removeFeature',
+				action: 'Remove a feature from a license',
+				description: 'Set a feature flag to false on a key',
+				routing: {
+					request: {
+						method: 'GET',
+						url: '/key/RemoveFeature',
+					},
+				},
+			},
+			{
+				name: 'Unblock',
+				value: 'unblock',
+				action: 'Unblock a license',
+				description: 'Unblock an existing Cryptolens key',
+				routing: {
+					request: {
+						method: 'GET',
+						url: '/key/UnblockKey',
 					},
 				},
 			},

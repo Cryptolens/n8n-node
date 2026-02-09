@@ -18,7 +18,7 @@ export const aiDescription: INodeProperties[] = [
 			{
 				name: 'Get Web API Log',
 				value: 'getWebApiLog',
-				action: 'Get Web API log events',
+				action: 'Get web API log events',
 				description: 'Get logs of Web API requests',
 				routing: {
 					request: {

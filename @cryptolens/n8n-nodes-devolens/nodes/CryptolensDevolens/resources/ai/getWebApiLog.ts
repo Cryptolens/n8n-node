@@ -14,7 +14,7 @@ export const aiGetWebApiLogDescription: INodeProperties[] = [
 		displayOptions: {
 			show: showOnlyForAiGetWebApiLog,
 		},
-		description: 'Optional filter by product id',
+		description: 'Optional filter by product ID',
 		routing: {
 			send: {
 				type: 'query',
@@ -108,7 +108,7 @@ export const aiGetWebApiLogDescription: INodeProperties[] = [
 		displayName: 'Limit',
 		name: 'limit',
 		type: 'number',
-		default: 10,
+		default: 50,
 		typeOptions: {
 			minValue: 1,
 			maxValue: 1000,
@@ -116,7 +116,7 @@ export const aiGetWebApiLogDescription: INodeProperties[] = [
 		displayOptions: {
 			show: showOnlyForAiGetWebApiLog,
 		},
-		description: 'How many events to return (max 1000)',
+		description: 'Max number of results to return',
 		routing: {
 			send: {
 				type: 'query',
@@ -132,7 +132,7 @@ export const aiGetWebApiLogDescription: INodeProperties[] = [
 		displayOptions: {
 			show: showOnlyForAiGetWebApiLog,
 		},
-		description: 'Cursor to return events after this id (or time if time filter is used)',
+		description: 'Cursor to return events after this ID (or time if time filter is used)',
 		routing: {
 			send: {
 				type: 'query',
@@ -148,7 +148,7 @@ export const aiGetWebApiLogDescription: INodeProperties[] = [
 		displayOptions: {
 			show: showOnlyForAiGetWebApiLog,
 		},
-		description: 'Cursor to return events before this id (or time if time filter is used)',
+		description: 'Cursor to return events before this ID (or time if time filter is used)',
 		routing: {
 			send: {
 				type: 'query',
@@ -161,11 +161,11 @@ export const aiGetWebApiLogDescription: INodeProperties[] = [
 		name: 'orderBy',
 		type: 'string',
 		default: '',
-		placeholder: 'Id descending',
+		placeholder: 'ID descending',
 		displayOptions: {
 			show: showOnlyForAiGetWebApiLog,
 		},
-		description: 'Optional ordering, e.g. "Id descending" or "Time ascending"',
+		description: 'Optional ordering, e.g. "ID descending" or "Time ascending"',
 		routing: {
 			send: {
 				type: 'query',
@@ -188,7 +188,7 @@ export const aiGetWebApiLogDescription: INodeProperties[] = [
 				name: 'anomalyClassification',
 				type: 'boolean',
 				default: false,
-				description: 'Include anomaly classification fields in response',
+				description: 'Whether to include anomaly classification fields in response',
 				routing: {
 					send: {
 						type: 'query',

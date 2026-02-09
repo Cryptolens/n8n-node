@@ -82,7 +82,7 @@ export const productGetKeysDescription: INodeProperties[] = [
 		displayOptions: {
 			show: showOnlyForProductGetKeys,
 		},
-		description: 'Optional global key id for fast lookup',
+		description: 'Optional global key ID for fast lookup',
 		routing: {
 			send: {
 				type: 'query',
