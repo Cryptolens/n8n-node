@@ -1,0 +1,59 @@
+{
+    "name":  "@cryptolens/n8n-nodes-devolens",
+    "version":  "0.2.1",
+    "description":  "n8n community node for Cryptolens Web API v3",
+    "license":  "MIT",
+    "homepage":  "https://github.com/Cryptolens/n8n-node",
+    "keywords":  [
+                     "n8n-community-node-package",
+                     "n8n",
+                     "cryptolens",
+                     "licensing"
+                 ],
+    "author":  {
+                   "name":  "Artem Los",
+                   "email":  "artem@cryptolens.io"
+               },
+    "repository":  {
+                       "type":  "git",
+                       "url":  "git+https://github.com/Cryptolens/n8n-node.git"
+                   },
+    "bugs":  {
+                 "url":  "https://github.com/Cryptolens/n8n-node/issues"
+             },
+    "publishConfig":  {
+                          "access":  "public"
+                      },
+    "scripts":  {
+                    "build":  "n8n-node build",
+                    "build:watch":  "tsc --watch",
+                    "dev":  "n8n-node dev",
+                    "lint":  "n8n-node lint",
+                    "lint:fix":  "n8n-node lint --fix",
+                    "release":  "n8n-node release",
+                    "prepublishOnly":  "n8n-node prerelease"
+                },
+    "files":  [
+                  "dist"
+              ],
+    "n8n":  {
+                "n8nNodesApiVersion":  1,
+                "strict":  true,
+                "credentials":  [
+                                    "dist/credentials/CryptolensDevolensApi.credentials.js"
+                                ],
+                "nodes":  [
+                              "dist/nodes/CryptolensDevolens/CryptolensDevolens.node.js"
+                          ]
+            },
+    "devDependencies":  {
+                            "@n8n/node-cli":  "*",
+                            "eslint":  "9.32.0",
+                            "prettier":  "3.6.2",
+                            "release-it":  "^19.0.4",
+                            "typescript":  "5.9.2"
+                        },
+    "peerDependencies":  {
+                             "n8n-workflow":  "*"
+                         }
+}
