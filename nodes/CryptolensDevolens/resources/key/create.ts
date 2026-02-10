@@ -40,22 +40,6 @@ export const keyCreateDescription: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Key',
-		name: 'key',
-		type: 'string',
-		default: '',
-		displayOptions: {
-			show: showOnlyForKeyCreate,
-		},
-		description: 'Optional custom key string',
-		routing: {
-			send: {
-				type: 'query',
-				property: 'Key',
-			},
-		},
-	},
-	{
 		displayName: 'Notes',
 		name: 'notes',
 		type: 'string',
