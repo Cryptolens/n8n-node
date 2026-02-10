@@ -1,6 +1,6 @@
 {
     "name": "@cryptolens/n8n-nodes-devolens",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "description": "n8n community node for Cryptolens Web API v3",
     "license": "MIT",
     "homepage": "https://github.com/Cryptolens/n8n-node",
